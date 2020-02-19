@@ -1,0 +1,154 @@
+#switch-animatiomation-button {
+    display: none
+}
+#switch-animatiomation-button:checked + #animation-block #noise-2,
+#switch-animatiomation-button:checked + #animation-block #noise-5 { 
+    display: block;
+}
+#switch-animatiomation-button:checked + #animation-block #noise-3,
+#switch-animatiomation-button:checked + #animation-block #noise-4,
+#switch-animatiomation-button:checked + #animation-block #noise-6,
+#switch-animatiomation-button:checked + #animation-block #noise-7,
+#switch-animatiomation-button:checked + #animation-block #noise-8 { 
+    animation-name: noise_other;
+}
+#animation-block {
+    background: url("https://i.postimg.cc/PqTX5wvS/img.png") no-repeat;
+    display: block;
+    height: 540px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0.9;
+    width: 960px;
+}
+#background-stripes {
+    background: repeating-linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .2) 1px, transparent 1px, transparent 3px);
+    height: 100%;
+}
+#logo {
+    animation-name: logo_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    bottom: 30px;
+    position: absolute;
+    right: 40px;
+}
+#noise-1 {
+    animation-name: noise_1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: blue;
+    height: 34px;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+}
+#noise-2 {
+    background-image: linear-gradient(to right, rgba(0,255,0,0.2), rgba(120,0,0,0.2));
+    display: none;
+    height: 13px;
+    position: absolute;
+    right: 131px;
+    width: 73px;
+}
+#noise-3 {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(to right, rgba(255, 166, 0, 0.2), rgba(84, 120, 0, 0.2));
+    height: 41px;
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 117px;
+    width: 570px;
+}
+#noise-4 {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(to right, rgba(217, 255, 0, 0.2), rgba(68, 120, 0, 0.2));
+    height: 78px;
+    position: absolute;
+    opacity: 0;
+    top: 275px;
+    width: 417px;
+}
+#noise-5 {
+    background-image: linear-gradient(to right, rgba(255, 0, 128, 0.2), rgba(14, 120, 0, 0.4));
+    display: none;
+    height: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+}
+#noise-6 {
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 72, 0, 0.2);
+    height: 41px;
+    position: absolute;
+    opacity: 0;
+    left: 82px;
+    top: 68px;
+    width: 165px;
+}
+#noise-7 {
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 72, 0, 0.2);
+    height: 36px;
+    position: absolute;
+    opacity: 0;
+    left: 82px;
+    top: 109px;
+    width: 219px;
+}
+#noise-8 {
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 72, 0, 0.2);
+    height: 43px;
+    position: absolute;
+    opacity: 0;
+    left: 181px;
+    top: 145px;
+    width: 120px;
+}
+
+@keyframes logo_animation {
+    94% { opacity: 1; }
+    95% { opacity: 0; }
+    96% { opacity: 1; }
+    97% { opacity: 0; }
+    98% { opacity: 1; }
+    99% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes noise_1 {
+    0%   { top: -40px; }
+    100% { top: 900px; }
+}
+
+@keyframes noise_other {
+    0% { opacity: 0; }
+    1% { opacity: 1; }
+    2% { opacity: 0; }
+    3% { opacity: 1; }
+    4% { opacity: 0; }
+    33% { opacity: 0; }
+    34% { opacity: 1; }
+    35% { opacity: 0; }
+    36% { opacity: 1; }
+    37% { opacity: 0; }
+    73% { opacity: 0; }
+    74% { opacity: 1; }
+    75% { opacity: 0; }
+    76% { opacity: 1; }
+    77% { opacity: 0; }
+    96% { opacity: 0; }
+    97% { opacity: 1; }
+    98% { opacity: 0; }
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
